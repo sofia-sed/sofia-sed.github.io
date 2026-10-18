@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap CDN</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header class="container-fluid xbox-nav bg-black">
+      <!--ردیف اول-->
+      <div class="row align-items-center top-nav">
+        <!-- بخش منو و سرچ-->
+        <div class="col-4 d-flex pt-3 align-items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="30"
+            fill="white"
+            class="bi bi-list pe-2"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="white"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+            />
+          </svg>
+        </div>
+        <!--لوگوی ایکس باکس-->
+        <div class="col-4 bg-black ps-5 mx-auto d-flex">
+          <img class="w-50" src="images/nav-logo.png" />
+        </div>
+        <!--سبد خرید و پروفایل-->
+        <div class="col-4 d-flex pt-3 pe-2 nav3">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="white"
+              class="bi bi-cart3"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+              />
+            </svg>
+          </div>
+          <div
+            class="me text-white border border-white border-1 rounded-50% ps-1 pt-1"
+          >
+            ME
+          </div>
+        </div>
+      </div>
+      <!--ردیف دو-->
+      <div class="row bottom-nav">
+        <div class="col-12">
+          <button
+            class="xbox-button text-white bg-black border border-black pb-1 my-2"
+          >
+            XBOX
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 6 آیتم بعد بنر-->
+    <section class="items">
+      <div class="container ps-3 py-4">
+        <div class="row">
+          <div class="col-4 col-md-2 text-center">
+            <img class="w-50" src="images/gamepass.svg" />
+            <p class="text-success">Game Pass</p>
+          </div>
+          <div class="col-4 col-md-2 text-center">
+            <img class="w-50" src="images/Games.svg" />
+            <p class="text-success">Games</p>
+          </div>
+          <div class="col-4 col-md-2 text-center">
+            <img class="w-50" src="images/Devices.svg" />
+            <p class="text-success">Devices</p>
+          </div>
+          <div class="col-4 col-md-2 text-center">
+            <img class="w-50" src="images/Accessories.svg" />
+            <p class="text-success">ACCESSORIES</p>
+          </div>
+          <div class="col-4 col-md-2 text-center">
+            <img class="w-50" src="images/Play.svg" />
+            <p class="text-success">PLAY</p>
+          </div>
+          <div class="col-4 col-md-2 text-center">
+            <img class="w-50" src="images/SignIn.svg" />
+            <p class="text-success">SIGN IN</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 14 تا بخش شامل عکس و نوشته-->
+    <div class="container-fluid">
+      <div class="row">
+        <!--بخش 1-->
+        <div class="col-12">
+          <div class="hero1 w-100 position-relative">
+            <img class="w-100" src="images/1.jpg" />
+            <div
+              class="content1 position-absolute bottom-0 left-1 text-white ps-5 pb-5 w-75"
+            >
+              <span class="a1 bg-warning text-black px-2 mb-2"
+                >PRE-ORDER NOW</span
+              >
+              <h2>Our smallest controller, for big adventures</h2>
+              <p>Take play to more places with the XBOX Nano Controller</p>
+              <p>LEARN MORE</p>
+            </div>
+          </div>
+        </div>
+
+        <!--بخش 2-->
+        <div class="col-12 mt-1">
+          <div class="hero2 w-100">
+            <img class="w-100" src="images/2.jpg" />
+            <div class="content2 bg-success text-white ps-3 py-5">
+              <h2>Discover your next favorite game</h2>
+              <p class="p1 py-3">
+                New games on day one , Hundreds of games. Stream anywhere, Earn
+                Rewards.
+              </p>
+              <span><b> JOIN GAME PASS</b></span>
+            </div>
+          </div>
+        </div>
+        <!--بخش 3-->
+        <div class="col-12 mt-1">
+          <div class="hero1 w-100 position-relative">
+            <img class="w-100" src="images/3.jpg" />
+            <div
+              class="content1 position-absolute bottom-0 left-1 text-white ps-4 pb-5 w-75"
+            >
+              <span class="a1 bg-warning text-black px-2 mb-2"
+                ><b> NOW AVAILABLE</b></span
+              >
+              <h2 class="h3 my-2"><b> ROG XBOX Ally X20</b></h2>
+              <p>Experience the next evolution of handheld PC gaming.</p>
+              <p><b>LEARN MORE</b></p>
+            </div>
+          </div>
+        </div>
+        <!--بخش 4-->
+        <div class="col-12 mt-1">
+          <div class="hero2 w-100">
+            <img class="w-100" src="images/4.jpg" />
+            <div class="content2 bg-success text-white ps-3 py-5">
+              <span class="a1 bg-warning text-black px-2 mb-4"
+                ><b> NEW SEASON</b></span
+              >
+              <h2 class="h3 my-4"><b>NBA 2K27</b></h2>
+              <p class="p4 pb-3">Earn all new rewards in Season 2.</p>
+              <p><b>GET IT NOW</b></p>
+            </div>
+          </div>
+        </div>
+
+        <!--بخش 5-->
+        <div class="col-12 mt-1">
+          <div class="hero2 w-100">
+            <img class="w-100" src="images/5.jpg" />
+            <div class="content2 bg-success text-white ps-3 py-5">
+              <h2 class="h3 my-4"><b>METRO 2039</b></h2>
+              <p class="p4 pb-3">
+                Journey into the dark heart of post-apocalyptic Moscow.
+              </p>
+              <p><b>PRE-ORDER NOW</b></p>
+            </div>
+          </div>
+        </div>
+
+        <!--بخش 6-->
+        <div class="col-12 mt-1">
+          <div class="hero2 w-100">
+            <img class="w-100" src="" />
+            <div class="content2 bg-dark text-white ps-3 py-5">
+              <h1 class="h3 my-4">Celebrate 25 years of play with XBOX</h1>
+              <p class="p4 pb-3">
+                Explore the celebration with exclusive experiences, products,
+                news, & more.
+              </p>
+              <div class="box p5 bg-success text-white ps-4 pe-3 py-1 w-25">
+                <span class="s6 ps-1"><b>EXPLORE</b> </span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-compact-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--بخش 7-->
+        <div class="col-12 mt-1">
+          <div class="hero2 w-100">
+            <img class="w-100" src="images/7.jpg" />
+            <div class="content2 bg-success text-white ps-3 py-5">
+              <h2 class="h3 my-4">
+                <b>Get the biggest games witj more on the way</b>
+              </h2>
+              <p><b>BROWSE GAMES</b></p>
+            </div>
+          </div>
+        </div>
+        <!--بخش 8-->
+        <div class="col-12 mt-1">
+          <div class="hero2 w-100">
+            <img class="w-100" src="images/8.jpg" />
+            <div class="content2 bg-success text-white ps-3 py-5">
+              <span class="a1 bg-warning text-black px-2 mb-4"
+                ><b>COMING SOON</b></span
+              >
+              <h2 class="h3 my-4"><b>World of Warcraft: Forever</b></h2>
+              <p class="p4 pb-3">
+                Crave a new path through Azeroth on November 4.
+              </p>
+              <p><b>PRE-ORDER NOW</b></p>
+            </div>
+          </div>
+        </div>
+
+        <!--بخش 9-->
+        <div class="col-12 mt-1">
+          <div class="hero2 w-100">
+            <img class="w-100" src="images/9.jpg" />
+            <div class="content2 bg-white text-black ps-3 py-5">
+              <span class="a1 bg-warning text-black px-2 mb-4"
+                ><b>NOW AVAILABLE</b></span
+              >
+              <h2 class="h3 my-4"><b>EA SPORTS FC™ 27</b></h2>
+              <p class="p4 pb-3">The World's Game is here</p>
+              <p><b>GET IT NOW</b></p>
+            </div>
+          </div>
+        </div>
+
+        <!--بخش 10-->
+        <div class="col-12 mt-1">
+          <div class="hero1 w-100 position-relative">
+            <img class="w-100" src="images/10.jpg" />
+            <div
+              class="content1 position-absolute bottom-0 left-1 text-white ps-5 pb-5 w-75"
+            >
+              <span class="a1 bg-warning text-black px-2 mb-2">NEW SEASON</span>
+              <h2>Diablo IV: Season of Hell's Legacy</h2>
+              <p>Redeem lost souls and confront the nightmares of the past</p>
+              <p>GET IT NOW</p>
+            </div>
+          </div>
+        </div>
+
+        <!--بخش 11-->
+        <div class="col-12 mt-1">
+          <div class="hero1 w-100 position-relative">
+            <img class="w-100" src="images/12.jpg" />
+            <div
+              class="content1 position-absolute bottom-0 left-1 text-white ps-5 pb-5"
+            >
+              <span class="a1 bg-warning text-black px-2 mb-2">NEW UPDATE</span>
+              <h2 class="h11 py-3">Forza Horizon 6: Horizon Meets</h2>
+              <p class="p11 py-3">
+                Park up at the limited-time Car Meet and obtain exciting new
+                rewards.
+              </p>
+              <p>GET IT NOW</p>
+            </div>
+          </div>
+        </div>
+
+        <!--بخش 13-->
+        <div class="col-12 mt-1">
+          <div class="hero2 w-100">
+            <img class="w-100" src="images/13.jpg" />
+            <div class="content2 bg-white text-black ps-3 py-5">
+              <span class="a1 bg-warning text-black px-2 mb-4"
+                ><b>NEW SEASON</b></span
+              >
+              <h2 class="h3 my-4">
+                <b>Overwatch - Season 5: A Grim Doctrine</b>
+              </h2>
+              <p class="p4 pb-3">
+                Sink your teeth into a haunting new season with a new Hero and
+                map
+              </p>
+              <p><b>GET IT NOW</b></p>
+            </div>
+          </div>
+
+
+        <!--بخش 14-->
+        <div class="col-12 mt-1">
+          <div class="hero2 w-100">
+            <img class="w-100" src="images/14.jpg" />
+            <div class="content2 bg-black text-white ps-3 py-5">
+              <span class="a1 bg-warning text-black px-2 mb-4"
+                ><b>XBOX GEAR </b></span
+              >
+              <h2 class="h3 my-4">
+                <b>Inspired by play</b>
+              </h2>
+              <p class="p4 pb-3">Explore XBOX gear's latest releases, collaboration drops, and everyday essentials.
+              </p>
+              <p><b>SHOP NOW</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
