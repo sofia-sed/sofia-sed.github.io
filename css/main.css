@@ -4,6 +4,12 @@
   border: 0;
   outline: 0;
 }
+.xbox-nav {
+  background-color: #1b1d1b;
+}
+.xbox-button {
+  background-color: #1b1d1b;
+}
 .me {
   width: 36px;
   height: 36px;
@@ -13,6 +19,94 @@
 .nav3 {
   justify-content: flex-end;
 }
+@media all and (max-width: 859px) {
+  .menu {
+    display: none;
+  }
+}
+@media all and (min-width: 859px) {
+  .menu1,
+  .menu2,
+  .menu3,
+  .menu4,
+  .menu5 {
+    display: inline-block;
+  }
+  .list {
+    display: none;
+  }
+  .logo {
+  }
+  .microsoft {
+    display: none;
+  }
+}
+
+@media all and (min-width: 886px) {
+  .menu1,
+  .menu2,
+  .menu3,
+  .menu4,
+  .menu5,
+  .store {
+    display: inline-block;
+  }
+  .list {
+    display: none;
+  }
+  .logo {
+  }
+  .microsoft {
+    display: none;
+  }
+}
+@media all and (min-width: 981px) {
+  .community {
+    display: inline-block;
+  }
+}
+@media all and (min-width: 1120px) {
+  .support {
+    display: inline;
+  }
+}
+
+@media all and (min-width: 1212px) {
+  .myXBOX {
+    display: inline-block;
+  }
+}
+/*Hero Carousel*/
+.carousel-item {
+  height: 700px;
+}
+.btn {
+  background-color: #90f910;
+  color: #151515;
+  font-weight: bold;
+  text-decoration: none;
+}
+.btn2 {
+  background-color: rgba(0,0,0,.34);
+  color: #151515;
+  font-weight: bold;
+  text-decoration: none;
+}
+.hero-p {
+  background-color: #90f910;
+  color: #151515;
+  font-weight: bold;
+  text-decoration: none;
+}
+.available {
+  font-size: 11px;
+  font-weight: 600;
+  font-family: monospace;
+  letter-spacing: 0.09em;
+  color: #e8e8e8;
+  padding-top: 6px;
+}
+
 .links {
   background-color: #f2f2f2;
   ul {
@@ -52,5 +146,8 @@
     color: #616161;
   }
 }
-@media all and (min-width: 1084px) {
+@media all and (min-width: 541px) {
+  .link-footer {
+    width: 33%;
+  }
 }
