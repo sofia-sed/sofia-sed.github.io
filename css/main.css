@@ -19,44 +19,63 @@
 .nav3 {
   justify-content: flex-end;
 }
+.menu {
+  font-size: 13px;
+}
 @media all and (max-width: 859px) {
   .menu {
     display: none;
   }
+  .microsoft{
+    display: none;
+  }
 }
 @media all and (min-width: 859px) {
-  .menu1,
-  .menu2,
-  .menu3,
-  .menu4,
-  .menu5 {
-    display: inline-block;
-  }
   .list {
     display: none;
   }
   .logo {
+    order: 0;
+    flex-shrink: 0;
+  }
+  .menu,
+  .menu-1 {
+    display: flex;
+    order: 1;
+    flex-shrink: 0;
+    gap: 5px;
   }
   .microsoft {
+    display: flex;
+    order: 2;
+  }
+  .search {
+    order: 3;
+  }
+  .shop-icon {
+    order: 4;
+  }
+  .me {
+    order: 5;
+  }
+  .bottom-nav {
     display: none;
   }
 }
 
 @media all and (min-width: 886px) {
-  .menu1,
-  .menu2,
-  .menu3,
-  .menu4,
-  .menu5,
+  .menu,
+  .menu-1,
   .store {
     display: inline-block;
   }
   .list {
     display: none;
   }
-  .logo {
-  }
   .microsoft {
+    display: none;
+  }
+  .bottom-nav {
     display: none;
   }
 }
@@ -64,10 +83,16 @@
   .community {
     display: inline-block;
   }
+  .bottom-nav {
+    display: none;
+  }
 }
 @media all and (min-width: 1120px) {
   .support {
     display: inline;
+  }
+  .bottom-nav {
+    display: none;
   }
 }
 
@@ -75,22 +100,37 @@
   .myXBOX {
     display: inline-block;
   }
+  .bottom-nav {
+    display: none;
+  }
 }
 /*Hero Carousel*/
 .carousel-item {
   height: 700px;
 }
-.btn {
+.hero-content .btn {
   background-color: #90f910;
   color: #151515;
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.btn2 {
-  background-color: rgba(0,0,0,.34);
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(144, 249, 16, 0.3);
+  filter: brightness(1.06);
+}
+.hero-content .btn2 {
+  background-color: rgba(0, 0, 0, 0.34);
   color: #151515;
   font-weight: bold;
   text-decoration: none;
+  cursor: pointer;
+}
+.hero-content .btn2:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
 }
 .hero-p {
   background-color: #90f910;
@@ -98,6 +138,7 @@
   font-weight: bold;
   text-decoration: none;
 }
+
 .available {
   font-size: 11px;
   font-weight: 600;
@@ -106,7 +147,52 @@
   color: #e8e8e8;
   padding-top: 6px;
 }
+.carousel-box {
+  width: 253px;
+  bottom: 25px;
+  left: 40%;
+  margin: 0 auto;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.46);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid #333;
+  border-radius: 40px;
+  padding: 5px 10px;
+}
+.left-chevron,
+.right-chevron {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+}
+.xbox-indicators span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #555;
+}
+.xbox-indicators .circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.32);
+  box-sizing: border-box;
+  cursor: pointer;
+  gap: 5px;
+}
+.xbox-indicators .active {
+  width: 24px;
+  border-radius: 999px;
+  background-color: #90f910;
+}
+/*12 cards*/
+.s6 {
+  background-color: rgb(144, 249, 16);
+}
 
+/*Footer*/
 .links {
   background-color: #f2f2f2;
   ul {
