@@ -5,58 +5,78 @@
   outline: 0;
 }
 .xbox-nav {
+  /* height: 91px; */
   background-color: #1b1d1b;
 }
 .xbox-button {
   background-color: #1b1d1b;
 }
+.logo {
+  flex-shrink: 0;
+}
+.logo img {
+  width: 75px;
+  height: 23px;
+}
+.search {
+  padding-right: 0px;
+}
 .me {
   width: 36px;
   height: 36px;
-  border: 1px solid black;
   border-radius: 50%;
 }
-.nav3 {
-  justify-content: flex-end;
-}
-.menu {
+.menu,
+.microsoft {
   font-size: 13px;
 }
-@media all and (max-width: 859px) {
-  .menu {
-    display: none;
-  }
-  .microsoft{
-    display: none;
-  }
+.ul{
+  list-style-type: none;
+  gap: 10px;
+  margin-left: -30px;
 }
-@media all and (min-width: 859px) {
+.menu svg{
+  margin-left: 4px;
+}
+@media all and (min-width: 860px) {
   .list {
     display: none;
   }
   .logo {
-    order: 0;
     flex-shrink: 0;
+    width: calc(10%);
   }
-  .menu,
+  .nav3 {
+    width: calc(10%);
+  }
   .menu-1 {
-    display: flex;
-    order: 1;
+    display: inline-block;
     flex-shrink: 0;
     gap: 5px;
   }
+  .store {
+    display: none;
+  }
+  .community {
+    display: none;
+  }
+  .support {
+    display: none;
+  }
+  .support {
+    display: none;
+  }
+  .myXBOX {
+    display: none;
+  }
   .microsoft {
-    display: flex;
-    order: 2;
+    display: inline-block;
   }
   .search {
-    order: 3;
+    width: calc(10%);
   }
   .shop-icon {
-    order: 4;
-  }
-  .me {
-    order: 5;
+    width: calc(5%);
   }
   .bottom-nav {
     display: none;
@@ -188,6 +208,20 @@
   background-color: #90f910;
 }
 /*12 cards*/
+.a1 {
+  color: #151515;
+  background-color: #90f910;
+  border: 1px solid #90f910;
+  border-radius: 6px;
+  padding-top: 6px;
+  font-size: 13px;
+}
+.content2 {
+  background-color: #90f910;
+}
+.p1 {
+  font-size: 13.5px;
+}
 .s6 {
   background-color: rgb(144, 249, 16);
 }
