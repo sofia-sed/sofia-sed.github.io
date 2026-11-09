@@ -30,12 +30,12 @@
 .microsoft {
   font-size: 13px;
 }
-.ul{
+.ul {
   list-style-type: none;
   gap: 10px;
   margin-left: -30px;
 }
-.menu svg{
+.menu svg {
   margin-left: 4px;
 }
 @media all and (min-width: 860px) {
@@ -131,8 +131,6 @@
 .hero-content .btn {
   background-color: #90f910;
   color: #151515;
-  font-weight: bold;
-  text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -153,12 +151,8 @@
   filter: brightness(1.06);
 }
 .hero-p {
-  background-color: #90f910;
   color: #151515;
-  font-weight: bold;
-  text-decoration: none;
 }
-
 .available {
   font-size: 11px;
   font-weight: 600;
@@ -208,6 +202,15 @@
   background-color: #90f910;
 }
 /*12 cards*/
+.cards {
+  background-color: #1b1d1b;
+}
+.card1{
+  border:1px solid #2c2d30;
+}
+.card2{
+  margin-left: 150px;
+}
 .a1 {
   color: #151515;
   background-color: #90f910;
@@ -216,8 +219,15 @@
   padding-top: 6px;
   font-size: 13px;
 }
+.a12 {
+  color: #90f910;
+  font-size: 11px;
+}
 .content2 {
   background-color: #90f910;
+}
+.content12 {
+  color: #1a1b1e;
 }
 .p1 {
   font-size: 13.5px;
@@ -227,8 +237,17 @@
 }
 
 /*Footer*/
+
+.social-section {
+  background-color: #1b1d1b;
+  img {
+    width: 32px;
+    height: 32px;
+  }
+}
 .links {
   background-color: #f2f2f2;
+  color: #616161;
   ul {
     list-style-type: none;
     justify-content: center;
