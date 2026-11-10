@@ -11,29 +11,44 @@
 .xbox-button {
   background-color: #1b1d1b;
 }
-.logo {
-  flex-shrink: 0;
-}
 .logo img {
   width: 75px;
   height: 23px;
-}
-.search {
-  padding-right: 0px;
 }
 .me {
   width: 36px;
   height: 36px;
   border-radius: 50%;
+  padding-left: 15px;
 }
 .menu,
 .microsoft {
   font-size: 13px;
 }
 .ul {
-  list-style-type: none;
   gap: 10px;
   margin-left: -30px;
+}
+.menu-1,
+.store,
+.support,
+.community span {
+  display: inline-block;
+  position: relative;
+}
+.menu-1 span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.menu-1:hover span::after {
+  transform: scaleX(1);
 }
 .menu svg {
   margin-left: 4px;
@@ -93,7 +108,7 @@
     display: none;
   }
   .microsoft {
-    display: none;
+    display: inline-block;
   }
   .bottom-nav {
     display: none;
@@ -187,16 +202,15 @@
   border-radius: 50%;
   background-color: #555;
 }
-.xbox-indicators .circle {
+.circle {
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.32);
   box-sizing: border-box;
   cursor: pointer;
-  gap: 5px;
 }
-.xbox-indicators .active {
+circle .active {
   width: 24px;
   border-radius: 999px;
   background-color: #90f910;
@@ -205,10 +219,14 @@
 .cards {
   background-color: #1b1d1b;
 }
-.card1{
-  border:1px solid #2c2d30;
+.card1 {
+  border: 1px solid #2c2d30;
 }
-.card2{
+.card1:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.card2 {
   margin-left: 150px;
 }
 .a1 {
@@ -231,6 +249,9 @@
 }
 .p1 {
   font-size: 13.5px;
+}
+.p-hover:hover {
+  color: #90f910;
 }
 .s6 {
   background-color: rgb(144, 249, 16);
